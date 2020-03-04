@@ -1,7 +1,8 @@
-package PACKAGE_NAME;
+
 
 public class java {
-  //add by wank125
-  //add by wank125 !
-    //add by wank125 !
+  public static void main(String[] args) {
+    //add by wank125
+    // add by wank125 !
+  }
 }
