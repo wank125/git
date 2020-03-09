@@ -7,12 +7,23 @@
     <groupId>com.yss</groupId>
     <artifactId>git</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/software.amazon.awscdk/lambda -->
-        <dependency>
-            <groupId>software.amazon.awscdk</groupId>
-            <artifactId>lambda</artifactId>
-            <version>1.27.0</version>
-        </dependency>
-    </dependencies>
+    <packaging>pom</packaging>
+    <scm>
+        <connection>scm:git:https://github.com/wank125/git.git</connection>
+        <developerConnection>scm:git:https://github.com/wank125/git.git</developerConnection>
+        <url>https://github.com/wank125/git</url>
+    </scm>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+                <version>1.11.2</version>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
